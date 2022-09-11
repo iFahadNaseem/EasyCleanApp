@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    android:background="@color/white"
+    tools:context=".Activity.LoginSignupActivity_Sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=" Welcome"
+            android:textColor="@color/blue_text"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabMode="scrollable"
+        android:layout_gravity="center"
+        app:tabUnboundedRipple="true"
+        app:tabRippleColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@color/blue_text">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Log In | لاگ ان " />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Sign Up | سائن اپ    " />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:isScrollContainer="false"
+        android:visibility="visible"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+</LinearLayout>

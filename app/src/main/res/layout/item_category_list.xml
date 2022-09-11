@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/rectangular_fullorange"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:padding="5dp"></ImageView>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mavenpro_medium"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="Electricians "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:id="@+id/txtOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/mavenpro_regular"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="40% off"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                android:visibility="gone"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

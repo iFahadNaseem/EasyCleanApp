@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="11.7dp"
+            android:background="@drawable/gradient_rect"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18.3sp"
+                android:text="4.5"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/blue_text"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue_text"
+                android:text="1000+ Happy Customers"
+                android:layout_marginLeft="10dp"
+                android:textSize="13.3sp"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_right_arrow3"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:clipToPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f5f7f8"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:text="Why Rapid?"
+            android:textSize="21.7sp"
+            android:fontFamily="@font/roboto_italic"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_verified_professionals"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verified Professionals"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_service_guarantee"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 days Service Guarantee"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_on_time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On Time Arrival"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

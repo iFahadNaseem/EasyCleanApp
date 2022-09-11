@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="About Us | ہمارے بارے میں"
+        android:textColor="@color/blue_text"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#efefef"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="70058991@student.uol.edu.pk +923456900931
+www.loremipsum.com
+Near University of Lahore , Chenab Campus ||  70058991@student.uol.edu.pk +923456900931
+www.loremipsum.com
+نزد یونیورسٹی آف لاہور، چناب کیمپس"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="15dp"/>
+    </ScrollView>
+
+</LinearLayout>

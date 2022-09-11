@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:gravity="center"
+    android:layout_margin="6dp"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="@color/blue_text" />
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:textColor="@color/grey" />
+
+</LinearLayout>

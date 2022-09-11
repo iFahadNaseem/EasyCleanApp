@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_leads"
+        android:icon="@drawable/ic_homew"
+        android:title="New Jobs" />
+
+    <item
+        android:id="@+id/navigation_earn"
+        android:icon="@drawable/ic_monetization_new"
+        android:title="Credits &amp; Earnings" />
+
+
+    <item
+        android:id="@+id/navigation_bookk"
+        android:icon="@drawable/ic_clipboard_new"
+        android:title="Job Details" />
+
+    <item
+        android:id="@+id/navigation_prof"
+        android:icon="@drawable/ic_name"
+        android:title="Profile" />
+
+</menu>
+
+<!-- THIS BOTTOM VIEW IS UNUSED. GO TO HOME ACTIVITY TO EDIT BOTTOM NAV -->

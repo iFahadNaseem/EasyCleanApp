@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyRadioButton"
+            android:text="Dry Service"
+            android:textSize="15sp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/walkthrough_txt"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$15"
+            android:textSize="13.3sp"
+            android:textColor="@color/sub_txt"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="40dp"/>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Lorem Ipsum is simply  dummy text of the
+   printing and "
+            android:textSize="13.3sp"
+            android:textColor="@color/sub_txt"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

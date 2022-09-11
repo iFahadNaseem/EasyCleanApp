@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/daysContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="dayOfTheWeekLayout1">
+
+        <TextView
+            style="@style/RobotoCalendarDayOfTheWeekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="dayOfTheWeekText1"
+            android:layout_marginBottom="20dp"
+            tools:text="MO" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="dayOfTheWeekLayout2">
+
+        <TextView
+            style="@style/RobotoCalendarDayOfTheWeekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="dayOfTheWeekText2"
+            android:layout_marginBottom="20dp"
+            tools:text="TU" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="dayOfTheWeekLayout3">
+
+        <TextView
+            style="@style/RobotoCalendarDayOfTheWeekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="dayOfTheWeekText3"
+            android:layout_marginBottom="20dp"
+            tools:text="WE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="dayOfTheWeekLayout4">
+
+        <TextView
+            style="@style/RobotoCalendarDayOfTheWeekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="dayOfTheWeekText4"
+            android:layout_marginBottom="20dp"
+            tools:text="TH" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="dayOfTheWeekLayout5">
+
+        <TextView
+            style="@style/RobotoCalendarDayOfTheWeekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="dayOfTheWeekText5"
+            android:layout_marginBottom="20dp"
+            tools:text="FR" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="dayOfTheWeekLayout6">
+
+        <TextView
+            style="@style/RobotoCalendarDayOfTheWeekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="dayOfTheWeekText6"
+            android:layout_marginBottom="20dp"
+            tools:text="SA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="dayOfTheWeekLayout7">
+
+        <TextView
+            style="@style/RobotoCalendarDayOfTheWeekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="dayOfTheWeekText7"
+            android:layout_marginBottom="20dp"
+            tools:text="SU" />
+    </LinearLayout>
+</LinearLayout>

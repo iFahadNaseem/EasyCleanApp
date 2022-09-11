@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bottom_sheet"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_alignParentBottom="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@drawable/ic_error"
+            android:fontFamily="@font/helvetica_bold"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/appwelcome"
+            android:textColor="@color/blue_text"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/gradient_blue_rect"
+            android:fontFamily="@font/mavenpro_medium"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="We follow 7-step hygiene protocol by using fresh masks, gloves &amp; sanitizer for every service to maintain the health of customers."
+            android:textColor="@color/white"
+            android:textSize="16sp"></TextView>
+
+<!--
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangular_grey"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/ic_facebook"
+                android:layout_gravity="center"
+               ></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dp"
+                    android:text="Facebook"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/mavenpro_medium"
+                    ></TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangular_grey"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/ic_google"
+                android:layout_gravity="center"
+                ></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dp"
+                    android:text="Google"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/mavenpro_medium"
+                    ></TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height=".5dp"
+            android:background="@color/lightgrey"></View>
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="Want to.."
+            android:textSize="13sp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/mavenpro_medium"
+            ></TextView>
+        <View
+            android:layout_width="100dp"
+            android:layout_height=".5dp"
+            android:background="@color/lightgrey"></View>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/mavenpro_medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="LOG IN"
+            android:textColor="@color/blue_text"
+            android:textSize="15sp"></TextView>
+
+
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:background="#efefef"></View>
+
+        <TextView
+            android:id="@+id/SignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/mavenpro_medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SIGN UP"
+            android:textColor="@color/blue_text"
+            android:textSize="15sp"></TextView>
+
+
+    </LinearLayout></LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

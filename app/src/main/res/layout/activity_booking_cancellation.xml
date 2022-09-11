@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rc_list"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/otherreason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange"
+        android:text="Others Reason"
+        android:textColor="@color/blue_text"
+        android:visibility="visible">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/l1_check"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/et_reason"
+            android:layout_weight=".70"
+            android:hint="write Reason"
+
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight=".30"
+            android:background="@color/orange"
+            android:text="Submit"
+            android:textColor="@color/blue_text">
+
+        </Button>
+
+    </LinearLayout>
+</RelativeLayout>

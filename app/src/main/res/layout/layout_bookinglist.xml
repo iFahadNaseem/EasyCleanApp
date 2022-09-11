@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Louis Ferd."
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color" />
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/credits"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="58 Credits"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey" />
+                <TextView
+                    android:id="@+id/timee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/lightgrey"></View>
+
+            <TextView
+                android:id="@+id/addresss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:id="@+id/llcancl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnSned"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/backgrnd_button"
+                    android:backgroundTint="@color/orange"
+                    android:padding="10dp"
+                    android:text="Send Withdrawal request"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_text"
+                    android:textSize="15sp"></Button>
+
+                <TextView
+                    android:id="@+id/refunded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Refunded due to cancellation"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.tigan_lab.customer.OTPActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER MOBILE NUMBER"
+            android:textSize="18.3sp"
+            android:textColor="@color/txt_color"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otp_services_info"
+                android:textSize="13.3sp"
+                android:textColor="@color/sub_txt"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:layout_marginBottom="26.3dp"/>
+
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="23.3dp"
+            android:layout_marginLeft="23.3dp"
+            android:layout_marginBottom="10.3dp"
+            android:layout_above="@+id/llpass"
+            android:background="@drawable/gray_rect"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/sppiner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="20dp"
+                    android:layout_height="13.3dp"
+                    android:src="@drawable/ic_india"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/country_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_color"
+                    android:text="+91"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="7dp"/>
+
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_down_arrow"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/view_line"/>
+
+
+            <EditText
+                android:id="@+id/etMob"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/sub_txt"
+                android:hint="Enter Mobile number"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/txt_color"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:maxLength="15"
+                android:padding="15dp"
+                android:background="@color/transperent"/>
+
+
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:id="@+id/ll_mob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="23.3dp"
+            android:layout_marginLeft="23.3dp"
+            android:layout_marginBottom="10.3dp"
+            android:layout_marginTop="7dp">
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/llmob"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rectangular_grey"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/sppiner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="20dp"
+                            android:layout_height="13.3dp"
+                            android:src="@drawable/pkflag"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center"/>
+
+
+                        <TextView
+                            android:id="@+id/country_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/txt_color"
+                            android:text="+92"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginLeft="7dp"/>
+
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/view_line"/>
+
+
+                    <EditText
+                        android:id="@+id/etMob"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/sub_txt"
+                        android:hint="Enter Mobile number"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/txt_color"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:padding="15dp"
+                        android:background="@color/transperent"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16.7sp"
+        android:textColor="@color/blue_text"
+        android:text="Next"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/gradient_btn"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_margin="23.3dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f7f8">
+
+    <!--review rating toolbar-->
+
+    <include layout="@layout/toolbar_all_services"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#efefef"></View>
+    <!--review rating recylerview is here-->
+
+    <RatingBar
+
+        android:id="@+id/ratingg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:numStars="5"
+        android:layout_gravity="center"
+
+        android:stepSize="0.1" />
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_address_rect"
+        android:hint="Sana Nadeem"
+        android:id="@+id/et_rating_head"
+        android:textAlignment="viewStart"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColorHint="@color/sub_txt"
+        android:textColor="@color/walkthrough_txt"
+        android:textSize="15sp"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:fontFamily="@font/roboto_regular"/>
+
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/edit_address_rect"
+        android:hint="Good service provided by the housemaid"
+        android:id="@+id/et_rating"
+        android:textAlignment="viewStart"
+        android:gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/sub_txt"
+        android:textColor="@color/walkthrough_txt"
+        android:textSize="15sp"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:fontFamily="@font/roboto_regular"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="11.7dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continue_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_gradient_rect"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Submit"
+
+                android:textAllCaps="false"
+                android:textColor="@color/blue_text"
+                android:textSize="18.3sp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

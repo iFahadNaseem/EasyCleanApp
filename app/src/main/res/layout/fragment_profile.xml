@@ -1,0 +1,462 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    tools:context=".fragment.ProfileFragment">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardBackgroundColor="@color/white"
+       android:layout_marginTop="11.7dp"
+       android:layout_marginLeft="8.3dp"
+       android:layout_marginRight="8.3dp"
+       android:layout_marginBottom="11.7dp">
+       
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+
+           
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/pImg"
+               android:layout_width="59.7dp"
+               android:layout_height="59.7dp"
+               android:layout_marginLeft="11.7dp"
+               android:layout_marginTop="17.7dp"
+               android:layout_marginBottom="17.7dp"
+               android:layout_marginRight="17dp"
+               android:src="@drawable/logo_rapid"/>
+
+
+           <LinearLayout
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/tName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="15sp"
+                   android:textColor="@color/txt_color"
+                   android:fontFamily="@font/roboto_regular"/>
+
+               <TextView
+                   android:id="@+id/tMob"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/sub_txt"
+                   android:layout_marginTop="6dp"
+                   android:textSize="12.7sp"/>
+               <TextView
+                   android:id="@+id/tEmail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/sub_txt"
+                   android:textSize="12.7sp"/>
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/tEdit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Edit"
+               android:textSize="12.7sp"
+               android:textColor="@color/sub_txt"
+               android:layout_marginTop="17dp"
+               android:layout_marginRight="-15dp"
+               android:fontFamily="@font/roboto_regular"/>
+
+
+           <TextView
+               android:id="@+id/signOut"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="50dp"
+               android:background="@color/white"
+               android:gravity="bottom"
+               android:layout_marginEnd="10dp"
+               android:padding="1dp"
+               android:text="Log Out"
+               android:textColor="@color/actionbar_color"
+               android:textSize="15sp" />
+
+
+
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:clipToPadding="false"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_notifications" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="Notification"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_booking" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="Bookings"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdrress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_manage_address" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="Address"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFaq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_help" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="Help"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llrateUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rate_us" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="Rate us"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llShareApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_share" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="Share App"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llaboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_about" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="@string/aboutApp"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lltC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="18.3dp"
+            android:layout_marginBottom="18.3dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_t_and_c" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="15sp"
+                android:text="Privacy"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/roboto_regular"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

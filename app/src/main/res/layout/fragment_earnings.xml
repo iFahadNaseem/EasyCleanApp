@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar_home1" />
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Earnings"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.0"
+                        android:gravity="center|end"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/txt_color" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Mar 2020"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginBottom="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"></View>
+
+                <TextView
+                    android:id="@+id/earnigHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Earnig History"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:layout_marginBottom="5dp"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Balance"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/txt_color" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.789"
+                        android:gravity="center|end"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:drawablePadding="10dp"
+                        android:drawableEnd="@drawable/ic_right_arrow"
+                        android:textColor="@color/txt_color" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtLastdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Last Recharge Date: 03 Feb 2020"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginBottom="7dp"/>
+
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Balance"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:textColor="@color/txt_color" />
+
+        <TextView
+            android:id="@+id/txttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:gravity="center"
+            android:hint="-"
+            android:padding="5dp"
+            android:textColor="@color/blue_text"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:id="@+id/buycredits"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/backgrnd_button"
+
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Buy Credits"
+
+                android:textAllCaps="true"
+                android:textColor="@color/blue_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="-1dp"
+            android:background="@color/gray_line"></View>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/viewOager1"></androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout12"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:visibility="visible"
+
+        android:layout_marginTop="-55dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabMode="fixed"
+        app:tabRippleColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@color/blue_text">
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Recharge" />
+
+    </com.google.android.material.tabs.TabLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height=".5dp"
+        android:layout_marginTop="-56dp"
+        android:background="#efefef"></View>
+
+</LinearLayout>

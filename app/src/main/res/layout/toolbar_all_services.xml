@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/roboto_bold"
+        android:text="All Services"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_search4"
+            android:backgroundTint="@color/blue"
+            android:layout_marginRight="17dp"/>
+        <ImageView
+            android:id="@+id/circle"
+            android:visibility="gone"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/dotted_circle"
+            android:layout_gravity="right"
+            android:layout_marginRight="17dp"/>
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/circleView"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            CircleProgressView:cpv_autoTextSize="true"
+            CircleProgressView:cpv_barColor="@color/gray"
+            CircleProgressView:cpv_barWidth="3dp"
+            CircleProgressView:cpv_innerContourSize="0dp"
+            android:layout_marginRight="10dp"
+            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_textSize="16sp"
+            CircleProgressView:cpv_outerContourSize="0dp"
+            CircleProgressView:cpv_rimColor="@color/gray"
+            CircleProgressView:cpv_rimWidth="3dp"
+            CircleProgressView:cpv_seekMode="true"
+            CircleProgressView:cpv_showUnit="true"
+            CircleProgressView:cpv_spinColor="@color/gray"
+            CircleProgressView:cpv_textColor="@color/blue_text"
+            CircleProgressView:cpv_textScale="1"
+            CircleProgressView:cpv_unit="%"
+            CircleProgressView:cpv_unitColor="@color/blue"
+            CircleProgressView:cpv_unitPosition="right_top"
+            CircleProgressView:cpv_unitScale="1" />
+
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

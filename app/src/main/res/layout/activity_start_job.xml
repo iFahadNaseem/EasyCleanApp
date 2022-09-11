@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    tools:context=".Activity.StartJob">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_check"
+            android:backgroundTint="@color/orange"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Lead Buy Successfully Done."
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/orange" />
+
+
+
+        <TextView
+            android:id="@+id/tname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="ASfaq"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/blue_text" />
+
+        <TextView
+            android:id="@+id/tPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="1234567890"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-3dp"
+            android:text="ascfa sduygsaiuf gduygsa"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/etCode"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:hint="Enter Code here"
+            android:textColorHint="@color/grey"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/blue_text"
+            android:background="@drawable/backgrnd_button"
+            android:backgroundTint="@color/lightgrey"/>
+
+        <TextView
+            android:id="@+id/btnStartJOb"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgrnd_button"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Start Job"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_text"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

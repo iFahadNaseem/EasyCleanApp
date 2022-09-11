@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/roboto_calendar_background"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/roboto_calendar_background"
+        android:padding="@dimen/roboto_calendar_padding"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/roboto_calendar_month_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <include
+        layout="@layout/roboto_calendar_week_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_line"
+        android:layout_marginTop="75dp"/>
+
+</RelativeLayout>

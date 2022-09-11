@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.tigan_lab.customer.PaymentActivityy1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_all_services"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="80dp"
+                android:orientation="vertical">
+
+
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cash payment 2"
+                        android:textColor="@color/walkthrough_txt"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#efefef"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Debit Card"
+                        android:checked="true"
+                        android:textColor="@color/walkthrough_txt"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="11.7dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_address_rect"
+                        android:hint="Enter Card Number"
+                        android:textColorHint="@color/sub_txt"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:padding="13dp"
+                        android:inputType="number"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginRight="16.7dp"
+                        android:fontFamily="@font/roboto_regular"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_address_rect"
+                        android:hint="Name On Card"
+                        android:textColorHint="@color/sub_txt"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:padding="13dp"
+                        android:layout_marginTop="11.7dp"
+                        android:inputType="text"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginRight="16.7dp"
+                        android:fontFamily="@font/roboto_regular"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16.7dp"
+                            android:layout_marginTop="11.7dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_address_rect"
+                                android:hint="MM"
+                                android:textColorHint="@color/sub_txt"
+                                android:textColor="@color/walkthrough_txt"
+                                android:textSize="15sp"
+                                android:paddingRight="17dp"
+                                android:paddingLeft="17dp"
+                                android:paddingBottom="13dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingTop="13dp"
+                                android:inputType="number"
+
+                                android:fontFamily="@font/roboto_regular"/>
+
+
+
+                            <EditText
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/edit_address_rect"
+                                android:hint="YY"
+                                android:textColorHint="@color/sub_txt"
+                                android:textColor="@color/walkthrough_txt"
+                                android:textSize="15sp"
+                                android:paddingRight="17dp"
+                                android:paddingLeft="17dp"
+                                android:paddingBottom="13dp"
+                                android:paddingTop="13dp"
+                                android:inputType="number"
+
+                                android:layout_marginLeft="11.7dp"
+                                android:fontFamily="@font/roboto_regular"/>
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_address_rect"
+                            android:hint="CVV"
+                            android:textColorHint="@color/sub_txt"
+                            android:textColor="@color/walkthrough_txt"
+                            android:textSize="15sp"
+                            android:paddingRight="17dp"
+                            android:paddingLeft="17dp"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:layout_marginRight="16.7dp"
+                            android:layout_marginTop="11.7dp"
+                            android:inputType="number"
+                            android:gravity="center"
+                            android:maxLength="3"
+                            android:fontFamily="@font/roboto_regular"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#efefef"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Card"
+
+                        android:textColor="@color/walkthrough_txt"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"
+                        android:theme="@style/MyRadioButton"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#efefef"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Netbanking"
+
+                        android:textColor="@color/walkthrough_txt"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#efefef"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet"
+
+                        android:textColor="@color/walkthrough_txt"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#efefef"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_above="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shadow"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_gradient_rect"
+                android:layout_margin="11.7dp"
+                android:paddingTop="8.3dp"
+                android:paddingBottom="8.3dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="View Detail"
+                        android:textColor="@color/blue_text"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="$62"
+                        android:textColor="@color/blue_text"
+                        android:textSize="18.3sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Place Request"
+                    android:textColor="@color/blue_text"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

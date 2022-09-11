@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tigan_lab.easy_clean">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.tigan_lab.easy_clean.Activity.ProfileEdit"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.tigan_lab.easy_clean.Activity.ForgotPassActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.tigan_lab.easy_clean.Activity.OTPActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.tigan_lab.easy_clean.Activity.PasswordResetActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.tigan_lab.easy_clean.Activity.RechargePlan" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.OrderSuccessfull"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.PanPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.GstPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.BankEdit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.AfterBankEdit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.AfterGstPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.tigan_lab.easy_clean.Activity.BookingConfirm" />
+        <activity android:name="com.tigan_lab.easy_clean.Activity.StartJob" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.ServiceDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.MainActivity_Sp"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tigan_lab.easy_clean.Activity.LoginSignupActivity_Sp"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.tigan_lab.easy_clean.Activity.Razorpay" />
+        <activity android:name="com.tigan_lab.easy_clean.Activity.RechargePaymentMethod" />
+
+
+        <service android:name="com.tigan_lab.easy_clean.Constants.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.tigan_lab.customer.Extra.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_vr1VMGjHU3wjoq" /> <!-- rzp_test_7fnnn7WTaard4h -->
+        <activity android:name="com.tigan_lab.ChooserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tigan_lab.customer.WalkThroughActivity" />
+        <activity android:name="com.tigan_lab.customer.LoginActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.tigan_lab.customer.OTPActivity" />
+        <activity android:name="com.tigan_lab.customer.HomePageActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.tigan_lab.customer.SubCategoryActivity" />
+        <activity android:name="com.tigan_lab.customer.WalkThroughActivity2" />
+        <activity android:name="com.tigan_lab.customer.ServicesListActivity" />
+        <activity android:name="com.tigan_lab.customer.ReviewRatingActivity" />
+        <activity android:name="com.tigan_lab.customer.ServicesFullDetails" />
+        <activity android:name="com.tigan_lab.customer.Cart_Activity" />
+        <activity android:name="com.tigan_lab.customer.OffersActivity" />
+        <activity android:name="com.tigan_lab.customer.SelectAddressActivity" />
+        <activity android:name="com.tigan_lab.customer.EditAddressActivity" />
+        <activity android:name="com.tigan_lab.customer.ScheduleTimeDateActivity" />
+        <activity android:name="com.tigan_lab.customer.PaymentActivityy1" />
+        <activity android:name="com.tigan_lab.customer.OrderSucessActivity" />
+        <activity android:name="com.tigan_lab.customer.BridalMakupPaymentActivity" />
+        <activity android:name="com.tigan_lab.customer.BridalMakupOrderSuccessActivity" />
+        <activity android:name="com.tigan_lab.customer.AcSevenPaymentActivity" />
+        <activity android:name="com.tigan_lab.customer.AcOrderSuccessActivity" />
+        <activity android:name="com.tigan_lab.customer.LocationActivity" />
+        <activity android:name="com.tigan_lab.customer.SearchingActivity" />
+        <activity android:name="com.tigan_lab.customer.Razorpay" />
+        <activity android:name="com.tigan_lab.customer.PayPal" />
+        <activity android:name="com.tigan_lab.customer.ConfirmationActivity" />
+        <activity android:name="com.tigan_lab.customer.OTPsignupActivity"></activity>
+
+        <activity android:name="com.tigan_lab.customer.PopularServicesActivity"></activity>
+        <activity android:name="com.tigan_lab.customer.LocationActivity1" />
+        <activity android:name="com.tigan_lab.customer.Rating_review" />
+        <activity android:name="com.tigan_lab.customer.Delivery_date_time" />
+        <activity android:name="com.tigan_lab.customer.Add_on_Activity" />
+        <activity android:name="com.tigan_lab.customer.Payment_order_activty" />
+        <activity android:name="com.tigan_lab.customer.Reschdule_activity" />
+        <activity android:name="com.tigan_lab.customer.Manage_address" />
+        <activity android:name="com.tigan_lab.customer.BookingCancellationActivity" />
+        <activity android:name="com.tigan_lab.customer.FaqlastActivity" />
+        <activity android:name="com.tigan_lab.customer.FaqMiddleActivity" />
+        <activity android:name="com.tigan_lab.customer.EditProfileActivity" />
+        <activity android:name="com.tigan_lab.customer.TermsConditionActivity" />
+        <activity android:name="com.tigan_lab.customer.AboutUsActivity" />
+        <activity android:name="com.tigan_lab.customer.FAQmain_Activity" />
+        <activity android:name="com.tigan_lab.customer.NotificationActivity" />
+        <activity android:name="com.tigan_lab.customer.AddAddressmainActivity" />
+        <activity android:name="com.tigan_lab.customer.PasswordResetActivity" />
+        <activity android:name="com.tigan_lab.customer.ForgotPassActivity" />
+        <activity android:name="com.tigan_lab.customer.SignUpActivity" />
+    </application>
+
+</manifest>

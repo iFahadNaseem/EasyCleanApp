@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_all_services"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#efefef"></View>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="80dp"
+                android:orientation="vertical">
+
+
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="5dp"
+                        android:visibility="gone"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#efefef"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb_debit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="11.7dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="5dp"
+                        android:text="Debit Card"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"
+                        android:visibility="gone" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#efefef"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="5dp"
+                        android:text="Credit Card"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"
+                        android:visibility="gone" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#efefef"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb_netbanking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="5dp"
+                        android:text="Netbanking"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"
+                        android:visibility="gone" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#efefef"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Razorpay"
+
+                        android:id="@+id/rb_razorpay"
+                        android:textColor="@color/walkthrough_txt"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#efefef"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paypal"
+
+                        android:id="@+id/rb_paypal"
+                        android:textColor="@color/walkthrough_txt"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:theme="@style/MyRadioButton"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#efefef"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"/>
+
+
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_linear"
+        android:background="@drawable/shadow" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11.7dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_gradient_rect"
+                android:paddingTop="8.3dp"
+                android:paddingBottom="8.3dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Detail"
+                        android:textSize="10sp"
+                        android:visibility="gone"
+                        android:textColor="@color/blue_text"
+                        android:fontFamily="@font/roboto_regular"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/price"
+                        android:textSize="18.3sp"
+                        android:textColor="@color/blue_text"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/place_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Place Request"
+                    android:textColor="@color/blue_text"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Recharge"
+                android:textColor="@color/blue_text"
+                android:textSize="17sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:stateListAnimator="@null">
+
+                    <LinearLayout
+                        android:layout_width="47.7dp"
+                        android:layout_height="47.7dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16.7dp"
+                        android:background="@drawable/ic_oval_gray"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_correct" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11.7dp"
+                        android:gravity="center"
+                        android:paddingBottom="50dp"
+                        android:text="Payment Successful!"
+                        android:textColor="@color/orange"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="23.3dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/gradient_btn"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Home"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_text"
+                        android:textSize="16.7sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

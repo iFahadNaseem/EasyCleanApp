@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:clipToPadding="false"
+                android:paddingBottom="70dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="When would you like your service?"
+                    android:textColor="@color/walkthrough_txt"
+                    android:layout_marginTop="26.7dp"
+                    android:layout_marginLeft="16.7dp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+                <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                    android:id="@+id/calendarview"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:textColorSelected="@color/blue_text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="At what time should the professional arrive?"
+                    android:textColor="@color/walkthrough_txt"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16.7dp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.7dp"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingLeft="16.7dp"
+                    android:clipToPadding="false"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shadow"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="11.7dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_gradient_rect"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Proceed"
+
+                android:textAllCaps="false"
+                android:textColor="@color/blue_text"
+                android:textSize="18.3sp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

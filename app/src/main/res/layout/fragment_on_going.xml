@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.OnGoingFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerview"
+
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingTop="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/noData"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/myorder_page"></ImageView>
+
+        <TextView
+            android:id="@+id/btnBook"
+
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/forgotpasswrd_signin"
+            android:layout_gravity="bottom|center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/blue_gradient_rect"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Book Now"
+            android:textColor="@color/blue_text"
+            android:textSize="16dp" />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<tabs>
+    <tab
+        id="@+id/home"
+        icon="@drawable/ic_home3"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Home" />
+    <tab
+        id="@+id/category"
+        icon="@drawable/ic_category3"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Category" />
+    <tab
+        id="@+id/booking"
+        icon="@drawable/ic_booking3"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Booking" />
+    <tab
+        id="@+id/profile"
+        icon="@drawable/ic_profile3"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Profile" />
+
+</tabs>

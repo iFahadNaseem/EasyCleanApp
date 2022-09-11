@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16.7dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16.5dp"
+            android:src="@drawable/ic_sun"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/walkthrough_txt"
+            android:text="Afternoon"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_afternoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.7dp"
+        android:nestedScrollingEnabled="false"
+        android:paddingLeft="16.7dp"
+        android:clipToPadding="false"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16.7dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="16.5dp"
+            android:src="@drawable/ic_sunset"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/walkthrough_txt"
+            android:text="Evening"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_evening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.7dp"
+        android:nestedScrollingEnabled="false"
+        android:paddingLeft="16.7dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

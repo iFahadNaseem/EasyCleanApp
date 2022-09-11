@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/city_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/slidr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_sort_button_with_three_lines"
+                        android:backgroundTint="@color/blue"></ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="top|left"
+                        android:text=""
+                        android:textColor="@color/blue_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|end"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/crdts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="top|end"
+                            android:text="Credits"
+                            android:textColor="@color/blue_text"
+                            android:textSize="14sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/credits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@id/relative_layout"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/item_count"
+                            android:hint=""
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:text=""
+                            android:textColor="@color/blue_text"
+                            android:textColorHint="@color/blue_text"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+
+                        <RelativeLayout
+                            android:id="@+id/badge_layout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+
+                                android:id="@+id/relative_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/bell"
+                                    android:layout_width="19dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/ic_notification"
+                                    android:backgroundTint="@color/white">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <TextView
+
+                                android:id="@+id/notification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/relative_layout"
+                                android:layout_marginTop="-4dp"
+                                android:layout_marginRight="7dp"
+                                android:background="@drawable/item_count1"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="5"
+                                android:textColor="@color/blue_text"
+                                android:textSize="10sp"
+                                android:textStyle="normal" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/city_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Easy Clean"
+                       android:textSize="30dp"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/mavenpro_bold"
+                        android:gravity="top|left"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_loc"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="-35dp"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_pin"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/mavenpro_regular"
+                            android:gravity="center|left"
+                            android:hint="Set your location"
+                            android:visibility="invisible"
+                            android:paddingBottom="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/blue"
+                            android:textColorHint="@color/sub_txt"
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:textColor="@color/blue_text"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/ic_search4"
+        android:visibility="gone" />
+
+
+</androidx.appcompat.widget.Toolbar>

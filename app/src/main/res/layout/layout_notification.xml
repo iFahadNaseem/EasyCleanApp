@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/txtDAte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end|center"
+            android:text="23/3/2020"
+            android:textSize="12sp"
+            android:textColor="@color/walkthrough_txt"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgeView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            ></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="23/3/2020"
+                android:textSize="14sp"
+                android:textColor="@color/blue_text"></TextView>
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="23/3/2020"
+                android:textSize="13sp"
+                android:textColor="@color/txt_color"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="14dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txtNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="23/3/2020"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textAllCaps="true"></TextView>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/walkthrough_txt"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginRight="5dp"></View>
+                    <TextView
+                        android:id="@+id/txtTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="23/3/2020"
+                        android:textSize="14sp"
+                        android:textColor="@color/walkthrough_txt"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

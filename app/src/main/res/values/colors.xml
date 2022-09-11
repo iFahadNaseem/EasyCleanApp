@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#05AEEE</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#05AEEE</color>
+
+<!--  customer app colors-->
+<!--    <color name="colorPrimary">#3F51B5</color>-->
+<!--    <color name="colorPrimaryDark">#141415</color>-->
+<!--    <color name="colorAccent">#32CD32</color>-->
+
+    <color name="orange">#FFAE5A</color>
+    <color name="lighter_orange">#f7b979</color>
+    <color name="red">#EB5757</color>
+    <color name="bg_gray">#F6F8FC</color>
+    <color name="gray_line">#edf1f7</color>
+    <color name="blue_text">#0D3469</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transperent">#00000000</color>
+    <color name="txt_color">#0D3469</color>
+    <color name="grey">#5C596B</color>
+    <color name="lightgrey">#F6F8FC</color>
+    <color name="sub_txt">#5C596B</color>
+    <color name="active_color">#ffb969</color>
+    <color name="inactive_color">#ffdeb8</color>
+    <color name="walkthrough_txt">#0D3469</color>
+    <color name="sky_blue">#80bbfd</color>
+    <color name="view_line">#e2e2e2</color>
+    <color name="tab_select_txt">#FFAE5A</color>
+    <color name="tab_unselect_txt">@color/sub_txt</color>
+    <color name="tab_txt_color">#797a7b</color>
+    <color name="actionbar_color">@color/colorPrimary</color>
+    <color name="blue">#0D3469</color>
+    <color name="green">#2bab1c</color>
+    <color name="lightorange">#32CD32</color>
+    <color name="darkorange">#FFAE5A</color>
+    <color name="gray">#717273</color>
+    <color name="inactive">@color/sub_txt</color>
+
+    <color name="roboto_calendar_background">#FFFFFF</color>
+    <color name="roboto_calendar_month_font">#38393f</color>
+    <color name="roboto_calendar_day_of_the_week_font">#161d20</color>
+    <color name="roboto_calendar_selected_day_font">#FFFFFF</color>
+    <color name="roboto_calendar_selected_day_background">#6685ff</color>
+    <color name="roboto_calendar_current_day_ring">#CCCCCC</color>
+    <color name="roboto_calendar_day_of_the_month_font">#4F4F4F</color>
+    <color name="roboto_calendar_circle_1">#EB5757</color>
+    <color name="roboto_calendar_circle_2">#55c6da</color>
+    <color name="roboto_calendar_month_arrow">#55c6da</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/active_color</item>
+        <item>@color/active_color</item>
+        <item>@color/active_color</item>
+        <item>@color/active_color</item>
+
+    </array>
+
+
+    <array name="array_dot_inactive">
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+        <item>@color/inactive_color</item>
+    </array>
+
+</resources>

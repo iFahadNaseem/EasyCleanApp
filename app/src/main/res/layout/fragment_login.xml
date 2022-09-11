@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_below="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rectangular_grey"
+            android:digits="1234567890"
+            android:drawableLeft="@drawable/ic_baseline_smartphone_24"
+            android:drawablePadding="18dp"
+            android:hint="موبائل نمبر درج کریں"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@color/blue_text"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view3_signup"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etPhone"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/lightgrey"
+            android:visibility="invisible"></View>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/view3_signup"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rectangular_grey"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="18dp"
+            android:hint="پاس ورڈ درج کریں"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@color/blue_text"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_below_pass"
+            android:weightSum="2"
+            android:layout_below="@id/etPass">
+
+            <CheckBox
+                android:id="@+id/cbShowPwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPass"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="پاسورڈ دکھاو"
+                android:textColor="@color/txt_color"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPass"
+            android:layout_toEndOf="@id/cbShowPwd"
+            android:gravity="end"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button_Signup"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_below_pass"
+            android:layout_alignStart="@+id/etPass"
+            android:layout_alignEnd="@+id/etPass"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/backgrnd_button"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="لاگ ان کریں"
+            android:textColor="@color/blue_text"
+            android:textSize="16.7sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_below="@+id/button_Signup"
+            android:layout_width="match_parent"
+            android:text="Create an account? Sign Up"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:id="@+id/tittie_signin"
+            android:textColor="@color/txt_color"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="By continue, you agree to our "
+            android:textColor="@color/txt_color"
+            android:textSize="11.7sp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Terms &amp; Conditions"
+                android:textSize="11.7sp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

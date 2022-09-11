@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16.7dp"
+        android:layout_marginBottom="16.7dp"
+        android:background="@drawable/gray_dateday_rect"
+        android:id="@+id/linear">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="19.7dp"
+            android:paddingRight="19.7dp"
+            android:paddingBottom="12.5dp"
+            android:paddingTop="12.5dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/sub_txt"
+            android:textSize="15.6sp"/>
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9.9sp"
+            android:textColor="@color/sub_txt"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="am"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

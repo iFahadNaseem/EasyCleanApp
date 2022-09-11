@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/nav_homed"
+            android:icon="@drawable/ic_home"
+            android:title="ڈیش بورڈ" />
+
+        <item
+            android:id="@+id/nav_earnings"
+            android:icon="@drawable/ic_monetization_new"
+            android:title="کریڈٹس" />
+
+        <item
+            android:id="@+id/nav_booking"
+            android:icon="@drawable/ic_clipboard_new"
+            android:title="بکنگ" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile_small"
+            android:title="پروفائل" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_credit"
+            android:icon="@drawable/ic_wallet"
+            android:title="کریڈٹ بیلنس" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_jobhistory"
+            android:icon="@drawable/ic_clipboard"
+            android:title="ملازمتوں کی تفصیل" />
+
+        <item
+            android:id="@+id/nav_gst"
+            android:icon="@drawable/ic_creditcard_new"
+            android:title="ذاتی معلومات" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_article"
+            android:title="شرائط و ضوابط" />
+        <item
+            android:id="@+id/nav_contct"
+            android:icon="@drawable/ic_telephone"
+            android:title="ہمارے بارے" />
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_exit"
+            android:title="لاگ آوٹ" />
+
+    </group>
+</menu>

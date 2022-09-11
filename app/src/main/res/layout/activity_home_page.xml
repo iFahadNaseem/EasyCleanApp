@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_weight="3">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7f8"
+    tools:context="com.tigan_lab.customer.HomePageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarLayout_sp"
+            layout="@layout/toolbar_home_sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line"/>
+        <include
+            android:id="@+id/toolbarLayout"
+            layout="@layout/toolbar_home"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/lightgrey"></View>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:clipToPadding="false"
+            android:paddingBottom="60dp"/>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            android:foreground="?attr/selectableItemBackground"
+            android:visibility="gone"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/selector_bottombar_item"
+            app:itemTextAppearance="@style/TextStyleBNV"
+            app:itemTextColor="@drawable/selector_bottombar_item"
+            app:menu="@menu/navigation" />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/menu_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:mbn_selectedIconColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:mbn_shadowColor="#949499"
+            app:mbn_defaultIconColor="@color/blue_text"
+            app:mbn_backgroundBottomColor="#ffffff"/>
+
+</RelativeLayout>
+
+    <include layout="@layout/layout_bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

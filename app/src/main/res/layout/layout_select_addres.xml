@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.7dp"
+        android:layout_marginBottom="12.7dp"
+        android:layout_marginLeft="11.7dp"
+        android:layout_marginRight="11.7dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11.7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/walkthrough_txt"
+                android:textSize="18.3sp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Home"/>
+
+
+            <TextView
+                android:id="@+id/txtphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:layout_marginTop="5dp"
+                android:textSize="13.3sp"
+                android:textColor="@color/walkthrough_txt"
+                android:fontFamily="@font/roboto_regular"/>
+
+
+            <TextView
+                android:id="@+id/taddrss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S 02 indialbulls mega mall, nr. dinesh
+mill, jetalpur road,
+Delhi"
+                android:textSize="13.3sp"
+                android:textColor="@color/sub_txt"
+                android:fontFamily="@font/roboto_regular"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/editBtn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_edit"/>
+        <ImageView
+            android:id="@+id/DeleteBtn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_error"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_line"/>
+
+</LinearLayout>

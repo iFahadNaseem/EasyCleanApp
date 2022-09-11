@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.tigan_lab.customer.OTPActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_back2"/>
+        
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/notificationn"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER VERIFICATION CODE"
+            android:textSize="18.3sp"
+            android:textColor="@color/txt_color"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_services"
+            android:textSize="13.3sp"
+            android:textColor="@color/sub_txt"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"/>
+            <TextView
+                android:id="@+id/txtMob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="on 87954631231"
+                android:textSize="13.3sp"
+                android:textColor="@color/sub_txt"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            app:pinBackground="@drawable/gray_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="4"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+
+
+        <TextView
+            android:id="@+id/txtResend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="didn’t get code RESEND!"
+            android:gravity="center"
+            android:textColor="@color/sub_txt"
+            android:textSize="11.7sp"
+            android:fontFamily="@font/roboto_light"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16.7sp"
+        android:textColor="@color/blue_text"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:background="@drawable/gradient_btn"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_margin="23.3dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

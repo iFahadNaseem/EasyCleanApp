@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33.3dp"
+        android:layout_marginBottom="15sp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtle makeup + Free Hairstyling"
+            android:textColor="@color/txt_color"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="15sp"
+            android:theme="@style/MyRadioButton"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-$30 per person"
+            android:textSize="13.3sp"
+            android:textColor="@color/sub_txt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/roboto_regular"/>
+
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-Complete Professional Makeup"
+            android:textSize="13.3sp"
+            android:textColor="@color/sub_txt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/roboto_regular"/>
+
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Hair: straightening, Blow-dry,
+  Curls, Buns, Braids"
+            android:textSize="13.3sp"
+            android:textColor="@color/sub_txt"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/roboto_regular"/>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/linear"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/girl"
+                app:civ_border_color="#e7e7e7"
+                app:civ_border_width="3dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+
+                app:civ_border_color="#e7e7e7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:civ_border_width="3dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+
+                android:layout_marginRight="10dp"
+                app:civ_border_width="3dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/girl"
+                app:civ_border_color="#e7e7e7"
+                android:layout_marginRight="10dp"
+                app:civ_border_width="3dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

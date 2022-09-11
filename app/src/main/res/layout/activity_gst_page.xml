@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    android:background="@color/white"
+    tools:context=".Activity.BankEdit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:backgroundTint="@color/blue"></ImageView>
+
+        <TextView
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="NIC Details        |     شناختی کارڈ کی تفصیلات"
+            android:textColor="@color/blue_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text="NIC Number                                  شناختی کارڈ نمبر"
+                        android:textColor="@color/txt_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="National I'D CardNumber"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"></View>
+
+                    <EditText
+                        android:id="@+id/RegstrdNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@drawable/backgrnd_button"
+                        android:backgroundTint="@color/white"
+                        android:digits="1234567890"
+                        android:maxLength="14"
+                        android:gravity="center|left"
+                        android:hint="Enter Your Natonal I'D Number "
+                        android:inputType="phone"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_text"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text="Full Name                                                    پورا نام"
+                        android:textColor="@color/txt_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"></View>
+
+                    <EditText
+                        android:id="@+id/Nmae"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@drawable/backgrnd_button"
+                        android:backgroundTint="@color/white"
+                        android:digits="qwertyuiopasdfghjklzxcvbnm QWERTYUIOPASDFGHJKLZXCVBNM"
+                        android:gravity="center|left"
+                        android:hint="Enter Your Full Legal Name"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_text"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text="Date of Birth                                        تاریخ پیدائش"
+                        android:textColor="@color/txt_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"></View>
+                    <TextView
+                        android:id="@+id/Dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/backgrnd_button"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Enter Your Date of Birth"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:padding="8dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/blue_text"
+                        android:layout_marginBottom="7dp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text=" Enter Gender                                    جنس درج کریں"
+                        android:textColor="@color/txt_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"></View>
+
+                    <EditText
+                        android:id="@+id/gendertypee"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@drawable/backgrnd_button"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center|left"
+                        android:hint="Male / Female"
+                        android:inputType="textCapWords"
+                        android:maxLength="6"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_text"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text="Father Name                                             والد کا نام "
+                        android:textColor="@color/txt_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"></View>
+
+                    <EditText
+                        android:id="@+id/dadName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@drawable/backgrnd_button"
+                        android:backgroundTint="@color/white"
+                        android:digits="QWERTYUIOPASDFGHJKLZXCVBNM qwertyuiopasdfghjklzxcvbnm"
+                        android:gravity="center|left"
+                        android:hint="Enter Your Father Name"
+                        android:maxLength="40"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_text"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Permanent Address "
+                        android:gravity="center|left"
+                        android:layout_marginLeft="2dp"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/txt_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"></View>
+
+                    <EditText
+                        android:id="@+id/pAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@drawable/backgrnd_button"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center|left"
+                        android:hint="Enter Address"
+                        android:inputType="textPostalAddress"
+                        android:maxLength="60"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_text"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pan Card Number"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="2dp"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/txt_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Please update PAN number"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"></View>
+                    <EditText
+                        android:id="@+id/panNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/backgrnd_button"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="---"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:padding="8dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/blue_text"
+                        android:layout_marginBottom="7dp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/cfront"
+
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/frntImg"></ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Select Image / Upload Image"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/txt_color" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/bckImg"></ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Select Image / Upload Image"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/txt_color" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/Updtae"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-47dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backgrnd_button"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="true"
+            android:text="Update"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SAVE"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-47dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backgrnd_button"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Save / محفوظ کریں"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

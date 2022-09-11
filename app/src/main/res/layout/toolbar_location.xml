@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:tint="@color/walkthrough_txt"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+        <EditText
+            android:id="@+id/et_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18sp"
+            android:layout_weight="1"
+            android:background="@color/transperent"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:hint="Enter Location"
+            android:inputType="text"
+            android:textColor="@color/sub_txt"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:tint="#9c9999"
+            android:layout_marginRight="15sp"
+            android:src="@drawable/ic_cross2"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

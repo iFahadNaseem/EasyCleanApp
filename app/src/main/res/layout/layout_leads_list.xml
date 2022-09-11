@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Louis Ferd"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/booking"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:gravity="center|left"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey" />
+                <TextView
+                    android:id="@+id/tdate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textAllCaps="true"
+                    android:gravity="center|end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/credits"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="58 Credits"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/grey" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/timee1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color" />
+                <TextView
+                    android:id="@+id/timee2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:gravity="center|end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/txt_color" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/lightgrey"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/addresss"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Addresss"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center|end"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/txt_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/backgrnd_button"
+                    android:backgroundTint="@color/red"
+                    android:padding="10dp"
+                    android:text="Cancelled request"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"></Button>
+
+                <TextView
+                    android:id="@+id/refunded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Refunded due to cancellation"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

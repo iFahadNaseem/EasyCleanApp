@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tdate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey" />
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_text" />
+                <TextView
+                    android:id="@+id/credits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="2dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viewLead"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue_text" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/remianCredits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:gravity="center|end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

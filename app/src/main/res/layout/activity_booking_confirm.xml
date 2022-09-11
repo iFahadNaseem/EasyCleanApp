@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    tools:context=".Activity.StartJob">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Partner Name"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/partnerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="10dp"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="Allen"
+            android:textColor="@color/blue_text"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Partner Mobile Number"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/grey" />
+
+
+        <TextView
+            android:id="@+id/tPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="1234567890"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/red" />
+
+
+        <EditText
+            android:id="@+id/etCode"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:hint="Enter Service OTP Code here"
+            android:textColorHint="@color/grey"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/blue_text"
+            android:background="@drawable/backgrnd_button"
+            android:backgroundTint="@color/lightgrey"/>
+
+        <TextView
+            android:id="@+id/btnStartJOb"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgrnd_button"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/conofirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-51dp"
+        android:background="@drawable/backgrnd_button"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Confirm Mark"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

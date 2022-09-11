@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    android:background="@color/white"
+    tools:context=".Activity.ServiceDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Service Details"
+            android:gravity="center|left"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/txt_color"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:text="Location"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/locationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Service Name"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_text"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:text="Client Name"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                />
+            <TextView
+                android:id="@+id/clientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="---"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_text"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="Date &amp; Time"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                />
+            <TextView
+                android:id="@+id/DateTjime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="---"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_text"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="Service Name"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                />
+            <TextView
+                android:id="@+id/serbiceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="---"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_text"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="Service Description"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                />
+            <TextView
+                android:id="@+id/serbicedes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="---"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_text"
+                android:layout_marginBottom="5dp"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/lightgrey"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:text="Client Details"
+                    android:gravity="center|left"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color"
+                    android:layout_marginBottom="5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:topOffset="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/lightgrey">
+            </View>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:text="Phone Number"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                />
+            <TextView
+                android:id="@+id/clientPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Service Name"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_text"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:text="Client Location"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                />
+            <TextView
+                android:id="@+id/clientLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Service Name"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/blue_text"
+                android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnRespnd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-51dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backgrnd_button"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Respond"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="@color/blue_text"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

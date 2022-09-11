@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/FAHAD/.gradle/caches/transforms-2/files-2.1/04a0a381195c27f86de308a358041a56/jetified-AnimatedLoadingIndicator-v1.3/res/layout/custom_dialog_progress.xml" value="0.15443840579710144" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_about_us.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_ac_order_success.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_ac_seven_payment.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_add_address.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_all__services_.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_bank_edit.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_bathroom_cleaning_one.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_booking_cancellation.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_booking_confirm.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_bridal_makup_order_success.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_bridal_makup_payment.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_chooser.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_confirmation.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_faq_main_.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_faq_middle.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_faqlast.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_forgot_pass.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_forgot_pass_sp.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_gst_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_home_cleaning_fifth.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_home_cleaning_three.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_home_page.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_location.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_login_signup.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_login_signup_sp.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_manage_address.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_notification.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_offers.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_order_sucess.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_otp.xml" value="0.1" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_pan_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_payemnt_provider.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_payment.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_payment_successful.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_payment_user.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_popular_services.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_profile_edit.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_rating_review.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_review_rating.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_salon_at_home_women_one.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_salon_at_home_women_two.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_service_details.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_sign_up.xml" value="0.12" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_splash.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_splash_screen.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_start_job.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_terms_condition.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/activity_walk_through.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/app_bar_main.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/content_main.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/custom_spinner_items.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/custom_spinner_items_sp.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_appliance_repair.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_booking.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_booking_sp.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_category.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_contact_us.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_earnings.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_gallery.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_historybokking.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_home.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_home_sp.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_homee.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_login.xml" value="0.5" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_on_going.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_profile.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_profile_sp.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_signup.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_slideshow.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/fragment_terms.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/home_slider.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/image_layout.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_ac_second_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_addon.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_addons_addlist.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_booking_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_bridle_makup_four_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_cancelbooking.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_cart.xml" value="0.5" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_category_horizontal_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_category_list.xml" value="0.3409090909090909" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_category_sub_list.xml" value="0.5" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_dateday_list.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_group_header.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_lay_time.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_mehndi_artist_guest_six_list.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_mehndi_artist_list.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_offers_list.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_order_success.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_popular_list.xml" value="0.5" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_profile_list.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_review_rating_list.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_rv_name.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_select_coutnry_list.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_serice_des.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_time_list.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/item_wedding_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_bookinglist.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_gst_pan.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_homeprod_r2.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_homeproduct_r1.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_leads_list.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_notification.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_planlist.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/layout_select_addres.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/more.xml" value="0.22" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/select_country_popup.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/slide_one.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/team.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/team_subcategory.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/toolbar_all_services.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/toolbar_appliance_repair.xml" value="0.1625" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/toolbar_home1.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/layout/toolbar_home_sp.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/menu/activity_main_drawer.xml" value="0.1796875" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/menu/main.xml" value="0.1796875" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/menu/navigation.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/FAHAD/Downloads/EasyClean/app/src/main/res/xml-ur/locale_config.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/drawable/backgrnd_button.xml" value="0.152" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/drawable/blue_gradient_rect.xml" value="0.152" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/drawable/gradient_btn.xml" value="0.1205" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/drawable/ic_india.xml" value="0.152" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_about_us.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_all__services_.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_bathroom_cleaning_one.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_booking_confirm.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_chooser.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_edit_profile.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_forgot_pass.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_forgot_pass_sp.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_gst_page.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_home_page.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_login_signup.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_login_signup_sp.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_main.xml" value="0.11684782608695653" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_pan_page.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_payment.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_payment_user.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_popular_services.xml" value="0.17527173913043478" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_rating_review.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_review_rating.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_salon_at_home_women_one.xml" value="0.25" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_salon_at_home_women_two.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/activity_start_job.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/fragment_category.xml" value="0.17527173913043478" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/fragment_earnings.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/fragment_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/fragment_signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/image_layout.xml" value="0.25" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/item_booking_list.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/item_category_horizontal_list.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/item_category_list.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/item_category_sub_list.xml" value="0.33" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/item_popular_list.xml" value="0.22" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/item_review_rating_list.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/layout_gst_pan.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/row_item_view_placesearch.xml" value="0.1" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/toolbar_all_services.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/layout/toolbar_home.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/menu/activity_main_drawer.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/hm868/AndroidStudioProjects/Android Source Code/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19947916666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

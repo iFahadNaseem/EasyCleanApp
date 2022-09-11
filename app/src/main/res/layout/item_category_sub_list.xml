@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_outline"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left|top"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Half Arm Waxing"
+                        android:textColor="@color/blue_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Rich White Chocolate Wax"
+                        android:textColor="@color/sub_txt"
+                        android:textSize="11.7sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/linear_ratedd">
+                        <RatingBar
+                            android:id="@+id/rating"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="1dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:theme="@style/Widget.AppCompat.RatingBar.Small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="$10"
+                            android:textColor="@color/sub_txt"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tmrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/_15"
+                            android:textColor="@color/sub_txt"
+                            android:textSize="13.3sp" />
+
+
+                        <TextView
+                            android:id="@+id/totalsave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Save 25%"
+                            android:textColor="#f97b73"
+                            android:textSize="13.3sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="11.3dp"
+                            android:layout_height="11.3dp"
+                            android:layout_gravity="left|center"
+                            android:src="@drawable/ic_clock" />
+
+                        <TextView
+                            android:id="@+id/timie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="30 min"
+                            android:textColor="@color/sub_txt"
+                            android:textSize="11.3sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/viewdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:paddingBottom="5dp"
+                            android:text="View Details"
+                            android:textColor="@color/darkorange"
+                            android:textSize="11.3sp" />
+
+                        <ImageView
+                            android:layout_width="11dp"
+                            android:layout_height="11dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/ic_next1"
+                            android:backgroundTint="@color/darkorange" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtAddons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="2dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center|start"
+                    android:paddingBottom="5dp"
+                    android:text="Add-ons"
+                    android:textColor="@color/darkorange"
+                    android:textSize="11.3sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/l1_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="15 min"
+                        android:textColor="@color/sub_txt"
+                        android:textSize="8.3sp"
+                         />
+
+                    <ImageView
+                        android:layout_width="10.3dp"
+                        android:layout_height="10.3dp"
+                        android:src="@drawable/ic_clock"
+                         />
+
+                    <RatingBar
+                        android:id="@+id/rating1"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:theme="@style/Widget.AppCompat.RatingBar.Small"
+                         />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="end">
+
+                    <LinearLayout
+                        android:id="@+id/linear_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_light_rect"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="7dp"
+                            android:paddingBottom="5dp"
+                            android:text="ADD"
+                            android:textColor="@color/darkorange" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="1.5dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1.5dp"
+                                android:background="#f4f4f4">
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/bg_gray"
+                                    android:src="@drawable/ic_plus" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/blue_light_rect"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.2dp"
+                            android:background="@color/bg_gray">
+
+
+                            <ImageView
+                                android:id="@+id/minus"
+                                android:layout_width="17dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:src="@drawable/ic_minus" />
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:id="@+id/number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_regular"
+                            android:paddingLeft="8.5dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="8.5dp"
+                            android:paddingBottom="5dp"
+                            android:text="1"
+                            android:textColor="@color/darkorange" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="1.2dp"
+                            android:background="@color/bg_gray">
+
+
+                            <ImageView
+                                android:id="@+id/plus"
+                                android:layout_width="17dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:src="@drawable/ic_plus" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

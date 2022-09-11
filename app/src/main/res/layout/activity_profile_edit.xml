@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ProfileEdit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:backgroundTint="@color/blue_text"></ImageView>
+
+        <TextView
+            android:id="@+id/txtHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:gravity="top|left"
+            android:text="Edit Profile "
+            android:textColor="@color/blue_text"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        tools:context=".EditProfileActivity"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ScrollView
+                    android:id="@+id/scrolView_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:id="@+id/linear_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:visibility="visible"
+                                android:layout_marginBottom="80dp"
+                                android:id="@+id/cardView_account_details"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="180dp"
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="5dp"
+                                app:cardBackgroundColor="@color/lightgrey"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="20dp">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_account_input_details"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+
+                                        <EditText
+                                            android:id="@+id/eTname"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:background="@null"
+                                            android:gravity="start"
+                                            android:hint="Enter your name"
+                                            android:minHeight="48dp"
+                                            android:padding="5dp"
+                                            android:text="Name"
+                                            android:textColor="@color/blue_text"
+                                            android:textSize="14sp" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#edf1f7" />
+
+                                        <EditText
+                                            android:visibility="gone"
+                                            android:background="@null"
+                                            android:id="@+id/etEmail"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Email"
+                                            android:gravity="start"
+                                            android:padding="5dp"
+                                            android:textColor="@color/blue_text"
+                                            android:textSize="14sp"
+                                            android:inputType="textEmailAddress"
+                                            android:layout_margin="5dp"/>
+                                        <View android:visibility="gone"
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="@color/txt_color"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"/>
+
+                                        <EditText
+                                            android:visibility="gone"
+                                            android:background="@null"
+                                            android:id="@+id/etPhone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Contact"
+                                            android:gravity="start"
+                                            android:padding="5dp"
+                                            android:textSize="14sp"
+                                            android:inputType="phone"
+                                            android:maxLength="10"
+                                            android:textColor="@color/blue_text"
+                                            android:layout_margin="5dp"/>
+                                        <View
+                                            android:visibility="gone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="@color/txt_color"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"/>
+
+                                        <EditText
+                                            android:id="@+id/etProfression"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:background="@null"
+                                            android:gravity="start"
+                                            android:hint="Enter your Profession"
+                                            android:minHeight="48dp"
+                                            android:padding="5dp"
+                                            android:text="Profession"
+                                            android:textColor="@color/blue_text"
+                                            android:textSize="14sp" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#edf1f7" />
+
+                                        <EditText
+                                            android:id="@+id/etrange"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:background="@null"
+                                            android:gravity="start"
+                                            android:hint="Enter Delivery Range"
+                                            android:minHeight="48dp"
+                                            android:padding="5dp"
+                                            android:text="Delivery range"
+                                            android:textColor="@color/blue_text"
+                                            android:textSize="14sp" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="@color/gray_line" />
+
+                                        <TextView
+                                            android:id="@+id/btnSvae"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/forgotpasswrd_signin"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:layout_marginTop="40dp"
+                                            android:background="@drawable/backgrnd_button"
+                                            android:gravity="center"
+                                            android:padding="10dp"
+                                            android:text="Save"
+                                            android:textColor="@color/blue_text"
+                                            android:textSize="16dp" />
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_imageprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginLeft="5dp"
+                            >
+                            <!--<ImageView
+                                android:layout_alignEnd="@+id/imageview_of_myprofile_page"
+                                android:layout_alignBottom="@+id/imageview_of_myprofile_page"
+                                android:id="@+id/camrea_myprofile"
+                                android:layout_width="30dp"
+                                app:srcCompat="@drawable/ic_cameras"
+                                android:layout_height="30dp" />-->
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/pImage"
+                                android:layout_height="120dp"
+                                android:layout_width="120dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/logo"
+                                app:civ_border_width=".5dp"
+                                app:civ_border_color="@color/grey"/>
+                            <RelativeLayout
+                                android:id="@+id/rlImage"
+                                android:layout_below="@+id/pImage"
+                                android:gravity="bottom"
+                                android:layout_marginTop="-35dp"
+                                android:layout_marginLeft="-80dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <RelativeLayout
+
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:background="@drawable/ic_edit_sp"
+                                        android:backgroundTint="@color/blue_text" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

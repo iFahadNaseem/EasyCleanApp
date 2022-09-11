@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyRadioButton"
+            android:text="Traditional Design"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/txt_color"
+            android:textSize="15sp"
+            android:layout_marginLeft="33.3dp"
+            android:paddingLeft="8dp"/>
+
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13.3sp"
+            android:textColor="@color/txt_color"
+            android:layout_marginLeft="77dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="$15 to $20"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="16.7dp"
+            android:paddingLeft="70dp"
+            android:paddingBottom="25dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="12dp"
+                    />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="12dp"
+                    />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="12dp"
+                   />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="12dp"
+                   />
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="12dp"
+                   />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="12dp"
+                   />
+
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

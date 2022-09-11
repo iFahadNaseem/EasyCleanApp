@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_weight="3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_home1" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="start"
+                android:id="@+id/profimage"
+                android:src="@drawable/logo"
+                app:civ_border_color="@color/lightgrey"
+                app:civ_border_width=".5dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-69dp"
+                android:layout_marginRight="10dp"
+                android:drawableEnd="@drawable/ic_edit_sp"
+                android:gravity="center"
+                android:hint="-"
+                android:padding="5dp"
+                android:textColor="@color/txt_color"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rating"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.RatingBar.Indicator">
+
+            </androidx.appcompat.widget.AppCompatRatingBar>
+
+            <TextView
+                android:id="@+id/profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="About Me"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/txt_color"
+                            android:layout_marginBottom="5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgrey"></View>
+
+                        <TextView
+                            android:id="@+id/businessName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Business Name"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/grey"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:id="@+id/website"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Website Link"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/grey"
+                            android:layout_marginBottom="5dp"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Profession"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/txt_color"
+                            android:layout_marginBottom="5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgrey"></View>
+
+                        <TextView
+                            android:id="@+id/txtprofession"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="10dp"
+                            android:text="---"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/grey"
+                            android:layout_marginBottom="5dp"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_margin="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UPI/Paypal Id"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/txt_color"
+                            android:layout_marginBottom="5dp"/>
+                            <TextView
+                                android:id="@+id/eidt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:drawableEnd="@drawable/ic_edit_sp"
+                                android:gravity="end"
+                                android:padding="5dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/txt_color"
+                                android:layout_marginBottom="5dp"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgrey"></View>
+
+                        <TextView
+                            android:id="@+id/txtupi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="10dp"
+                            android:text="---"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/grey"
+                            android:layout_marginBottom="5dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/sve"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/etupi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/rectangular_grey"
+                                android:gravity="center|left"
+                                android:hint="Enter UPI/Paypal Id"
+                                android:padding="15dp"
+                                android:textColor="@color/blue_text"
+                                android:textSize="15sp" />
+
+
+                            <TextView
+                                android:id="@+id/saveBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/blue_gradient_rect"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Save"
+                                android:textColor="@color/blue_text"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="My Rating"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/txt_color"
+                            android:layout_marginBottom="5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgrey"></View>
+
+                        <TextView
+                            android:id="@+id/totalrating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="10dp"
+                            android:text="My latest 50 Ratings"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/grey"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:id="@+id/txtrating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-6dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="4.17"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/txt_color"
+                            android:layout_marginBottom="5dp"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    android:layout_margin="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Account Details"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/txt_color"
+                            android:layout_marginBottom="5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgrey"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Phone"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/grey"
+                          />
+
+                        <TextView
+                            android:id="@+id/tphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="---"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/blue_text"
+                            android:layout_marginBottom="3dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Email"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/temail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="---"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/blue_text"
+                            android:layout_marginBottom="5dp"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

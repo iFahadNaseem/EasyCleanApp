@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "252885088227",
+    "project_id": "fir-authproject-f8874",
+    "storage_bucket": "fir-authproject-f8874.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252885088227:android:fab8161ccb0543931252d6",
+        "android_client_info": {
+          "package_name": "com.tigan_lab.easy_clean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252885088227-4iqojmrbllp1g6bs5v22eorrg6fe4e36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1n7_sZGNu-tbNoR6zhwxp5m4i_kzyhLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252885088227-4iqojmrbllp1g6bs5v22eorrg6fe4e36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

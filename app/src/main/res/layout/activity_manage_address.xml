@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_linear"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_all_services"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height=".5dp"
+    android:background="#efefef"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Address"
+            android:paddingLeft="16.3dp"
+            android:paddingBottom="26.7dp"
+            android:paddingTop="26.7dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/walkthrough_txt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_deli_address"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shadow"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/AddAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16.7dp"
+            android:background="@drawable/dotted_rect"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="Add New Address"
+            android:textColor="@color/blue_text"
+            android:textSize="15sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+
+            android:background="@drawable/blue_gradient_rect"
+            android:text="Continue with this Address"
+            android:textSize="18.3sp"
+            android:visibility="gone"
+            android:layout_margin="11.7dp"
+            android:textColor="@color/blue_text"
+            android:fontFamily="@font/roboto_medium"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

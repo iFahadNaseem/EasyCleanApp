@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_below="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangular_grey"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="18dp"
+                android:hint="نام درج کریں"
+                android:inputType="textCapWords"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_text"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view1_signup"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etName"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/lightgrey"
+                android:visibility="invisible"></View>
+
+            <EditText
+                android:id="@+id/etmobileno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view1_signup"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangular_grey"
+                android:digits="0123456789"
+                android:drawableLeft="@drawable/ic_baseline_smartphone_24"
+                android:drawablePadding="18dp"
+                android:hint="                                                   موبائل نمبر درج کریں۔"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_text"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <View
+                android:id="@+id/view2_signup"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etmobileno"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/lightgrey"
+                android:visibility="invisible"></View>
+
+            <EditText
+                android:id="@+id/etemailid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view2_signup"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangular_grey"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="18dp"
+                android:hint="ای میل آئی ڈی درج کریں۔"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_text"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view3_signup"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etemailid"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/lightgrey"
+                android:visibility="invisible"></View>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view3_signup"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangular_grey"
+                android:digits="qwertyuiopasdfghjklzxcvbnm ,/. QWERTYUIOPASDFGHJKVBNM"
+                android:drawableLeft="@drawable/ic_baseline_home_24"
+                android:drawablePadding="18dp"
+                android:hint="ایڈریس درج کریں   "
+                android:inputType="textCapWords"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_text"
+                android:textSize="14sp" />
+
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/vdsa"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etAddress"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/lightgrey"></View>
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/etProfression"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_folder"
+                android:drawablePadding="18dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/vdsa"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Enter Profession"
+                android:textColor="@color/blue_text"/>
+
+            <View
+                android:id="@+id/view3_signup11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etProfression"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/lightgrey"
+                android:visibility="invisible"></View>
+
+            <LinearLayout
+                android:id="@+id/llspinnerr"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/view3_signup11"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:autofillHints="شہر منتخب کریں"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/maincate"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_weight="1"
+                    android:autofillHints="کیٹیگری منتخب کریں"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/llw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/llspinnerr"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/categry_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:autofillHints="ذیلی کیٹیگری منتخب کریں"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/childcatespinner"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:autofillHints="چائلڈ کیٹیگری منتخب کریں"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etrange"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/llw"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangular_grey"
+                android:drawableLeft="@drawable/ic_manage_address"
+                android:drawablePadding="18dp"
+                android:hint="کم از کم سروس رینج درج کریں"
+                android:paddingStart="15dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:textColor="@color/blue_text"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view4_"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etrange"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/lightgrey"
+                android:visibility="invisible"></View>
+
+            <EditText
+                android:id="@+id/etpasswrd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view4_"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangular_grey"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="18dp"
+                android:hint="                                                        پاس ورڈ درج کریں"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingStart="15dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/blue_text"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view4_signup"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etpasswrd"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/lightgrey"
+                android:visibility="invisible"></View>
+
+
+            <TextView
+                android:id="@+id/button_Signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_term"
+
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/backgrnd_button"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="سائن اپ"
+                android:textColor="@color/blue_text"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/view4_signup"
+                android:id="@+id/linear_term"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="By continue, you agree to our "
+                    android:textColor="@color/txt_color"
+                    android:textSize="11.7sp"
+                    android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Terms &amp; Conditions"
+                        android:textSize="11.7sp"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
